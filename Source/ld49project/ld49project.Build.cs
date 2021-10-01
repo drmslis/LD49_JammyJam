@@ -12,9 +12,18 @@ public class ld49project : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
+		PrivatePCHHeaderFile = "MaulProtoPrecompiled.h"; //header for precompiled .h
+		
+		MinFilesUsingPrecompiledHeaderOverride = 1;
+		
+		bUseUnity = false;
+
+
+
+
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-		
+
 		// Uncomment if you are using online features
 		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
 
